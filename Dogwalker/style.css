@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #f8f8fc;
+  color: #222;
+}
+.hero {
+  background: linear-gradient(120deg,#55acee 60%,#fff 100%);
+  padding-bottom: 32px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px 0 32px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.7em;
+  color: #223;
+  letter-spacing: 1px;
+}
+.nav-btn {
+  background: #223;
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+}
+.hero-content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 40px 10px 18px 10px;
+}
+.hero-content h1 {
+  color: #223;
+  font-weight: bold;
+  margin: 0 0 13px 0;
+  font-size: 2.3em;
+}
+.hero-content p {
+  font-size: 1.2em;
+  color: #444;
+}
+.cta-btn {
+  background-color: #55acee;
+  color: #fff;
+  padding: 14px 40px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.15em;
+  cursor: pointer;
+  transition: background .2s;
+  text-decoration: none;
+  display: inline-block;
+}
+.cta-btn:hover {
+  background: #3574a7;
+}
+.problems, .solution, .benefits, .social-proof, .booking, .faq {
+  max-width: 730px;
+  margin: 36px auto;
+  padding: 0 18px;
+}
+.problems h2, .benefits h2, .solution h2, .social-proof h2, .booking h2, .faq h2 {
+  color: #3574a7;
+  font-size: 1.4em;
+}
+.problems ul {
+  list-style: disc inside;
+  color: #444;
+  padding-left: 0;
+}
+.solution {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+}
+.solution-img {
+  background: url('https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=500&q=80') center/cover;
+  width: 180px;
+  height: 160px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.solution-text {
+  flex: 1 1 220px;
+}
+.benefits {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.benefit {
+  background: #e9f4fb;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1 1 200px;
+  min-width: 170px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px #e9f4fb66;
+}
+.social-proof blockquote {
+  margin: 18px 0;
+  background: #f7fafc;
+  padding: 14px 24px;
+  border-radius: 6px;
+  border-left: 5px solid #55acee;
+  font-style: italic;
+  color: #3574a7;
+}
+.booking label {
+  display: block;
+  margin: 18px 0 8px;
+}
+.booking input, .booking select {
+  width: 100%;
+  padding: 10px 8px;
+  font-size: 1em;
+  margin-bottom: 12px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+.booking form {
+  max-width: 370px;
+  margin: 0 auto;
+}
+.booking .urgency {
+  text-align: center;
+  font-weight: bold;
+  color: #223;
+  margin-top: 12px;
+}
+.faq details {
+  background: #e9f4fb;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  padding: 10px;
+}
+footer {
+  background: #223;
+  color: #fff;
+  padding: 17px 0;
+  text-align: center;
+  margin-top: 48px;
+  font-size: 1.05em;
+}
+@media (max-width: 780px) {
+  .solution, .benefits {
+    flex-direction: column;
+  }
+  .solution-img {
+    margin: 0 auto 15px auto;
+  }
+}
